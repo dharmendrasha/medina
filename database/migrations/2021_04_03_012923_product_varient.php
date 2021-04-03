@@ -16,7 +16,10 @@ class ProductVarient extends Migration
         Schema::create('product_varient', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('product_id');
-            // $table->string('product_id');
+            $table->string('stock');
+            $table->string('price');
+            $table->string('color');
+            $table->string('size');
             $table->timestamps();
         });
     }
